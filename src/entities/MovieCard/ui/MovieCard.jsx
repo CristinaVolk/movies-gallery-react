@@ -2,11 +2,11 @@ import classes from "./MovieCard.module.css";
 import { ReactComponent as HeartIcon } from '../../../shared/icons/favourite.svg';
 
 export const MovieCard = (props) => {
-    const {movie, onListClick} = props
+    const {movie, onUpdateMoviesClick} = props
     const {id, description, movieName, releaseYear, isFavourite, imageUrl} = movie
 
     function handleIconClick() {
-        onListClick(id)
+        onUpdateMoviesClick(id)
     }
 
     return (

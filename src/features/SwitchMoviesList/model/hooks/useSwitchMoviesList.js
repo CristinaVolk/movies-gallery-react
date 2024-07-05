@@ -27,7 +27,7 @@ export const useSwitchMoviesList = (isListTypeFavourite) => {
         return (movies.length && isListTypeFavourite) ? movies.filter(movie => movie.isFavourite) : movies;
     }
 
-    function listHandler(id) {
+    function updateMoviesHandler(id) {
         const updatedMovies = movies.map(movie =>
             movie.id === id
                 ? {...movie, isFavourite: !movie.isFavourite}
@@ -41,7 +41,7 @@ export const useSwitchMoviesList = (isListTypeFavourite) => {
         loading,
         error,
         setMovies,
-        listHandler,
+        updateMoviesHandler,
         renderMovies,
     }
 }

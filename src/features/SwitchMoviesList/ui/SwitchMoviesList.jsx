@@ -8,7 +8,7 @@ export const SwitchMoviesList = (props) => {
         movies,
         loading,
         error,
-        listHandler,
+        updateMoviesHandler,
         renderMovies
     } = useSwitchMoviesList(isListTypeFavourite)
 
@@ -17,9 +17,13 @@ export const SwitchMoviesList = (props) => {
         return <h1>Loading ...</h1>
     }
 
+    if (error) {
+        return <h1>{error}</h1>
+    }
+
     return (
         <>
-            {error && <p>{error}</p>}
+
             {!movies.length && <h2>No movies yet...</h2>}
             {movies.length && (
                 <ul className={classes.SwitchMoviesLists}>
@@ -29,7 +33,7 @@ export const SwitchMoviesList = (props) => {
                             <MovieCard
                                 key={movie.id}
                                 movie={movie}
-                                onListClick={listHandler}
+                                onUpdateMoviesClick={updateMoviesHandler}
                             />
                         ))
                     }
