@@ -1,7 +1,7 @@
 import classes from "./MainLayout.module.css";
 
 export const MainLayout = (props) => {
-    const {header, left, right, content, footer } = props
+    const {header, left, right, content, footer} = props
 
     return (
         <>
@@ -11,9 +11,7 @@ export const MainLayout = (props) => {
                 <div className={classes.content}>{content}</div>
                 {right && <div>{right}</div>}
             </main>
-            <footer>
-                {footer}
-            </footer>
+            <footer>{footer}</footer>
         </>
     )
 }

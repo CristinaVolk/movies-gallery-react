@@ -2,23 +2,24 @@ li.MovieCard {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    img {
+        height: 160px;
+        width: 140px;
+    }
+
+    svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    svg.filled {
+        fill: darkred;
+    }
+
+    svg.outlined {
+        fill: none;
+        stroke: darkred;
+    }
 }
 
-img {
-    height: 160px;
-    width: 140px;
-}
-
-svg {
-    width: 24px;
-    height: 24px;
-}
-
-svg.filled {
-    fill: darkred;
-}
-
-svg.outlined {
-    fill: none;
-    stroke: darkred;
-}

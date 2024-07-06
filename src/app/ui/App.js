@@ -1,5 +1,6 @@
-import {MainLayout} from "../../layouts/MainLayout/ui/MainLayout";
 import {Outlet} from "react-router-dom";
+
+import {MainLayout} from "../../layouts/MainLayout/ui/MainLayout";
 import {Navigation} from "../../widgets/Navigation/ui/Navigation";
 
 

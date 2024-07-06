@@ -1,6 +1,7 @@
 import {useSwitchMoviesList} from "../model/hooks/useSwitchMoviesList";
-import classes from "./SwitchMoviesLists.module.css";
 import {MovieCard} from "../../../entities/MovieCard/ui/MovieCard";
+import classes from "./SwitchMoviesLists.module.css";
+
 
 export const SwitchMoviesList = (props) => {
     const {isListTypeFavourite} = props
@@ -23,8 +24,7 @@ export const SwitchMoviesList = (props) => {
 
     return (
         <>
-
-            {!movies.length && <h2>No movies yet...</h2>}
+            {!renderMovies().length && <h2>No movies yet...</h2>}
             {movies.length && (
                 <ul className={classes.SwitchMoviesLists}>
                     {

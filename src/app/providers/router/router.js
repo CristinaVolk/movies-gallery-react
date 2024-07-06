@@ -1,7 +1,8 @@
 import {createBrowserRouter} from "react-router-dom";
+
 import {App} from "../../ui/App";
 import {MoviesPage} from "../../../pages/MoviesPage/ui/MoviesPage";
-import { appRoutes, routesNames} from "../../../shared/consts/router";
+import {appRoutes, routesNames} from "../../../shared/consts/router";
 
 
 export const router = createBrowserRouter([

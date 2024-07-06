@@ -5,9 +5,9 @@ import {appRoutes, routesNames} from "../../../shared/consts/router";
 export const Navigation = () => {
     return (
         <nav className={classes.Navigation}>
-            <Link to={'/'}>Home</Link>
-            <Link to={appRoutes[routesNames.ALL_MOVIES]}>All Movies</Link>
-            <Link to={appRoutes[routesNames.FAVOURITE_MOVIES]}>Favourite Movies</Link>
+            <Link to={appRoutes[routesNames.HOME]}>{routesNames.HOME}</Link>
+            <Link to={appRoutes[routesNames.ALL_MOVIES]}>{routesNames.ALL_MOVIES}</Link>
+            <Link to={appRoutes[routesNames.FAVOURITE_MOVIES]}>{routesNames.FAVOURITE_MOVIES}</Link>
         </nav>
     )
 }
